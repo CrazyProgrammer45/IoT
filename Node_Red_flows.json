@@ -1,0 +1,1475 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Create Notiications subs",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "0f64b32982a2ed76",
+        "type": "tab",
+        "label": "create entities",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f4deae7534c4eb7e",
+        "type": "tab",
+        "label": "notification route",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "140478cef5241469",
+        "type": "ui-base",
+        "name": "ui_template.label.myDashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "31a9ae60529dbd67",
+        "type": "ui-theme",
+        "name": "ui_template.themes.defaultTheme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "1e2d0ae901d25c13",
+        "type": "ui-theme",
+        "name": "ui_template.themes.defaultTheme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "35bcf61d5a153c59",
+        "type": "ui-page",
+        "name": "ui_template.layout.page 1",
+        "ui": "140478cef5241469",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "1e2d0ae901d25c13",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "4e9f56d2bf9369cd",
+        "type": "ui-group",
+        "name": "dashboard_1",
+        "page": "35bcf61d5a153c59",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "e6adfe5aef69adcd",
+        "type": "mqtt-broker",
+        "name": "ttn-iot-sistema-intrusao",
+        "broker": "eu1.cloud.thethings.network",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9bffc4d2ec7aaa2c",
+        "type": "ui_tab",
+        "name": "IoT-2025-sistema-intrusao",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5fbf53fe2e457fb4",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cc7c8ea008719d9a",
+        "type": "ui_group",
+        "name": "IoT-2025",
+        "tab": "9bffc4d2ec7aaa2c",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "42f987e1efa25215",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "011d4f6a375bae8e",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "989e3277db9df93c",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5844f5f346f1f195",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "54764c02f84fb6a7",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 8,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "b29058cb9bdb5ec8",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "caf966d8d6a9b5d7",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 10,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "99b418b103e91350",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 11,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "f2cf97f2961ccd9d",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 13,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "68227bb310c09675",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 14,
+        "width": 18,
+        "height": 1
+    },
+    {
+        "id": "5ebf41e02cb6d5c7",
+        "type": "ui_spacer",
+        "z": "0f64b32982a2ed76",
+        "name": "spacer",
+        "group": "cc7c8ea008719d9a",
+        "order": 16,
+        "width": 17,
+        "height": 1
+    },
+    {
+        "id": "009d1c1ac27dad72",
+        "type": "ui_tab",
+        "name": "Main",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "103c81231863b998",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "009d1c1ac27dad72",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f2d3908a74072800",
+        "type": "mqtt-broker",
+        "name": "teste",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3979052e16493f8d",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "817b7e7190464dd3",
+        "type": "ui_group",
+        "name": "Trafego Utilização",
+        "tab": "3979052e16493f8d",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "08a8efd90a125c9c",
+        "type": "ui_group",
+        "name": "MapStreet",
+        "tab": "3979052e16493f8d",
+        "order": 1,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3cc11d24.ff01a2",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "35950434b2a2c412",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "create notification distancia",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"description\": \"Obtem informacacao sobre a distancia dos sensores das salas\",   \"subject\": {     \"entities\": [       {         \"idPattern\": \".*\",         \"type\": \"Room\"        }     ],     \"condition\": {       \"attrs\": [         \"measurement\",         \"value\"       ]     }   },   \"notification\": {     \"http\": {       \"url\": \"http://nodered:1880/notify/distancia\"     },     \"attrs\": [       \"measurement\",       \"value\"     ]   },   \"expires\": \"2026-01-01T12:00:00.00Z\",   \"throttling\": 5 }",
+        "payloadType": "json",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "d04bbb850f38065c",
+                "1141d9e46013d5e1"
+            ]
+        ]
+    },
+    {
+        "id": "1141d9e46013d5e1",
+        "type": "change",
+        "z": "f6f2187d.f17ca8",
+        "name": "HTTP Headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "msg.headers.content-type",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 400,
+        "wires": [
+            [
+                "c5511d9ff5ac5f71",
+                "9f650653796d9833"
+            ]
+        ]
+    },
+    {
+        "id": "c5511d9ff5ac5f71",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://orion:1026/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "5996cf88823e3258"
+            ]
+        ]
+    },
+    {
+        "id": "d04bbb850f38065c",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "Create notification",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5996cf88823e3258",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "check notification",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9f650653796d9833",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "after",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5be3d5b7dfe00807",
+        "type": "inject",
+        "z": "f6f2187d.f17ca8",
+        "name": "create notification bateria",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"description\": \"Obtem informacacao sobre a bateria dos sensores das salas\",   \"subject\": {     \"entities\": [       {         \"idPattern\": \".*\",         \"type\": \"Room\"        }     ],     \"condition\": {       \"attrs\": [         \"precision\"       ]     }   },   \"notification\": {     \"http\": {       \"url\": \"http://nodered:1880/notify/bateria\"     },     \"attrs\": [       \"precision\"     ]   },   \"expires\": \"2026-01-01T12:00:00.00Z\",   \"throttling\": 5 }",
+        "payloadType": "json",
+        "x": 150,
+        "y": 620,
+        "wires": [
+            [
+                "099dc17789bb8831",
+                "5afcf73ec4919bb2"
+            ]
+        ]
+    },
+    {
+        "id": "5afcf73ec4919bb2",
+        "type": "change",
+        "z": "f6f2187d.f17ca8",
+        "name": "HTTP Headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "msg.headers.content-type",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 620,
+        "wires": [
+            [
+                "b35671c04c04a1c6",
+                "5dd1441ead8cd8aa"
+            ]
+        ]
+    },
+    {
+        "id": "b35671c04c04a1c6",
+        "type": "http request",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://orion:1026/v2/subscriptions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 590,
+        "y": 620,
+        "wires": [
+            [
+                "13c0738b01bc8072"
+            ]
+        ]
+    },
+    {
+        "id": "099dc17789bb8831",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "Create notification",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "13c0738b01bc8072",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "check notification",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "5dd1441ead8cd8aa",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "after",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d28a5c05988ce14d",
+        "type": "comment",
+        "z": "0f64b32982a2ed76",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "63b2bcb5fd1f3a9c",
+        "type": "mqtt in",
+        "z": "0f64b32982a2ed76",
+        "name": "TTN",
+        "topic": "#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e6adfe5aef69adcd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "0531f8a3c9ace649",
+                "e181da34371aa31a"
+            ]
+        ]
+    },
+    {
+        "id": "0531f8a3c9ace649",
+        "type": "debug",
+        "z": "0f64b32982a2ed76",
+        "name": "results_ttn",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b6046d3f1547d556",
+        "type": "inject",
+        "z": "0f64b32982a2ed76",
+        "name": "paylaod_ttn_1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"name\": \"as.up.data.forward\",   \"time\": \"2025-06-06T20:26:03.141492951Z\",   \"identifiers\": [     {       \"device_ids\": {         \"device_id\": \"teste-end-device-2025\",         \"application_ids\": {           \"application_id\": \"teste-connect-2025-iv\"         },         \"dev_eui\": \"70B3D57ED0070FB0\",         \"dev_addr\": \"260B9578\"       }     }   ],   \"data\": {     \"@type\": \"type.googleapis.com/ttn.lorawan.v3.ApplicationUp\",     \"end_device_ids\": {       \"device_id\": \"teste-end-device-2025\",       \"application_ids\": {         \"application_id\": \"teste-connect-2025-iv\"       },       \"dev_eui\": \"70B3D57ED0070FB0\",       \"dev_addr\": \"260B9578\"     },     \"correlation_ids\": [       \"pba:uplink:01JX3ER1SGR98BX4X37318E2CP\"     ],     \"received_at\": \"2025-06-06T20:26:03.136026169Z\",     \"uplink_message\": {       \"f_port\": 2,       \"f_cnt\": 8,       \"frm_payload\": \"/wM3\",       \"decoded_payload\": {         \"batt_percentage\": 127,         \"bytes\": [           255,           3,           55         ],         \"dist_mov_cm\": 55,         \"dist_mov_m\": 0.55,         \"pir_value\": 1,         \"tipo_alvo\": 3       },       \"rx_metadata\": [         {           \"gateway_ids\": {             \"gateway_id\": \"packetbroker\"           },           \"packet_broker\": {             \"message_id\": \"01JX3ER1SGR98BX4X37318E2CP\",             \"forwarder_net_id\": \"000013\",             \"forwarder_tenant_id\": \"lora-cml\",             \"forwarder_cluster_id\": \"eu1.cloud.thethings.industries\",             \"forwarder_gateway_eui\": \"D401C3FFFF6CF65E\",             \"forwarder_gateway_id\": \"gw-quartelchelas\",             \"home_network_net_id\": \"000013\",             \"home_network_tenant_id\": \"ttn\",             \"home_network_cluster_id\": \"eu1.cloud.thethings.network\"           },           \"time\": \"2025-06-06T20:26:02.463929Z\",           \"rssi\": -103,           \"channel_rssi\": -103,           \"snr\": 1,           \"uplink_token\": \"CnkKaeeOrNnq95kcpv8HviCXGXKhDu6W/QgDh869aJ2ZcguZMSPI6uiHPt7kwEI4wCfTq5EwSz5TQXBuyU5y30WZHPyxbklY3+QoljSmQhWHo0spg+0w/TKJSxykK9BhwpYsZqKzvAdnbfC0/xIMGf2H497XxKflAUP9Gi8KAwAAExIIbG9yYS1jbWwaHmV1MS5jbG91ZC50aGV0aGluZ3MuaW5kdXN0cmllcw==\",           \"received_at\": \"2025-06-06T20:26:02.926427271Z\"         },         {           \"gateway_ids\": {             \"gateway_id\": \"fit-1\",             \"eui\": \"00F142122877FC0D\"           },           \"timestamp\": 917575228,           \"rssi\": -77,           \"signal_rssi\": -77,           \"channel_rssi\": -77,           \"snr\": 9,           \"frequency_offset\": \"-3370\",           \"location\": {             \"latitude\": 38.75625860392359,             \"longitude\": -9.115897715091707,             \"altitude\": 100,             \"source\": \"SOURCE_REGISTRY\"           },           \"uplink_token\": \"ChMKEQoFZml0LTESCADxQhIod/wNELysxLUDGgwI2p2NwgYQ5riDyQMg4LT7ndqJ0wI=\",           \"channel_index\": 3,           \"received_at\": \"2025-06-06T20:26:02.935519573Z\"         },         {           \"gateway_ids\": {             \"gateway_id\": \"fit-1\",             \"eui\": \"00F142122877FC0D\"           },           \"antenna_index\": 1,           \"timestamp\": 917575228,           \"rssi\": -79,           \"signal_rssi\": -83,           \"channel_rssi\": -79,           \"snr\": -2,           \"frequency_offset\": \"-3370\",           \"downlink_path_constraint\": \"DOWNLINK_PATH_CONSTRAINT_NEVER\",           \"channel_index\": 19,           \"received_at\": \"2025-06-06T20:26:02.935519573Z\"         }       ],       \"settings\": {         \"data_rate\": {           \"lora\": {             \"bandwidth\": 125000,             \"spreading_factor\": 12,             \"coding_rate\": \"4/5\"           }         },         \"frequency\": \"867100000\"       },       \"received_at\": \"2025-06-06T20:26:02.930604891Z\",       \"consumed_airtime\": \"1.318912s\",       \"packet_error_rate\": 0.33333334,       \"network_ids\": {         \"net_id\": \"000013\",         \"ns_id\": \"EC656E0000000181\",         \"tenant_id\": \"ttn\",         \"cluster_id\": \"eu1\",         \"cluster_address\": \"eu1.cloud.thethings.network\"       }     }   },   \"correlation_ids\": [     \"pba:uplink:01JX3ER1SGR98BX4X37318E2CP\"   ],   \"origin\": \"ip-10-100-4-244.eu-west-1.compute.internal\",   \"context\": {     \"tenant-id\": \"CgN0dG4=\"   },   \"visibility\": {     \"rights\": [       \"RIGHT_APPLICATION_TRAFFIC_READ\"     ]   },   \"unique_id\": \"01JX3ER205FB84WBCAB0GXTCEV\" }",
+        "payloadType": "json",
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "d5c89e71cd139d0b",
+                "e181da34371aa31a"
+            ]
+        ]
+    },
+    {
+        "id": "d5c89e71cd139d0b",
+        "type": "debug",
+        "z": "0f64b32982a2ed76",
+        "name": "result_ttn_1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "e181da34371aa31a",
+        "type": "function",
+        "z": "0f64b32982a2ed76",
+        "name": "transform to OCF Sensor",
+        "func": "let payload = (typeof msg.payload === 'string')\n    ? JSON.parse(msg.payload)\n    : msg.payload;\n\nif (!payload || !payload.data || !payload.data.uplink_message || !payload.data.uplink_message.decoded_payload) {\n    node.error(\"Payload malformado ou incompleto\");\n    return null;\n}\n\nlet decoded = payload.data.uplink_message.decoded_payload;\nlet metadata = payload.data.uplink_message.rx_metadata?.[0];\nlet location = metadata?.location;\n\n// 🔧 Corrigir formato da data para YYYY-MM-DDTHH:mm:ssZ\nlet rawDate = payload.data.uplink_message.received_at;\nlet isoDate = new Date(rawDate).toISOString(); // ex: 2025-06-06T20:26:02Z\n\nlet deviceId = payload.data.end_device_ids.device_id;\n\nlet sensor = {\n    id: `urn:ngsi-ld:Sensor:${deviceId}`,\n    type: \"Room\",\n\n    dateCreated: {\n        type: \"DateTime\",\n        value: isoDate\n    },\n    dateModified: {\n        type: \"DateTime\",\n        value: isoDate\n    },\n    name: {\n        type: \"Text\",\n        value: deviceId\n    },\n    description: {\n        type: \"Text\",\n        value: `LoRaWAN device ${deviceId} from app ${payload.data.end_device_ids.application_ids.application_id}`\n    },\n    location: {\n        type: \"geo:json\",\n        value: {\n            type: \"Point\",\n            coordinates: location\n                ? [location.longitude, location.latitude]\n                : [-9.142685, 38.736946]\n        }\n    },\n    value: {\n        type: \"Boolean\",\n        value: !!decoded.pir_value\n    },\n    measurement: {\n        type: \"Number\",\n        value: decoded.dist_mov_cm ?? 0\n    },\n    precision: {\n        type: \"Number\",\n        value: decoded.batt_percentage ?? 0\n    },\n    n: {\n        type: \"Text\",\n        value: `Tipo alvo: ${decoded.tipo_alvo ?? 'N/A'}`\n    },\n    range: {\n        type: \"StructuredValue\",\n        value: [\n            (decoded.dist_mov_cm ?? 0) - 5,\n            (decoded.dist_mov_cm ?? 0) + 5\n        ]\n    },\n    step: {\n        type: \"Number\",\n        value: 1.0\n    },\n    rt: {\n        type: \"StructuredValue\",\n        value: [\"oic.r.sensor\"]\n    },\n    if: {\n        type: \"StructuredValue\",\n        value: [\"oic.if.s\"]\n    },\n    dataProvider: {\n        type: \"Text\",\n        value: \"TTN\"\n    },\n    source: {\n        type: \"Text\",\n        value: \"https://eu1.cloud.thethings.network\"\n    },\n    refDevice: {\n        type: \"Text\",\n        value: \"device-\" + deviceId\n    }\n};\n\nmsg.payload = sensor;\nmsg.headers = {}; // ainda podes adicionar os headers aqui se precisares\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 540,
+        "wires": [
+            [
+                "a5d23c715c8b28c3",
+                "a26564d18bf09327"
+            ]
+        ]
+    },
+    {
+        "id": "a5d23c715c8b28c3",
+        "type": "debug",
+        "z": "0f64b32982a2ed76",
+        "name": "result_transformation",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "a26564d18bf09327",
+        "type": "change",
+        "z": "0f64b32982a2ed76",
+        "name": "HTTP Headers",
+        "rules": [
+            {
+                "t": "set",
+                "p": "msg.headers.content-type",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 540,
+        "wires": [
+            [
+                "61b37887409b4f09"
+            ]
+        ]
+    },
+    {
+        "id": "61b37887409b4f09",
+        "type": "http request",
+        "z": "0f64b32982a2ed76",
+        "name": "save data",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://orion:1026/v2/entities",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 980,
+        "y": 540,
+        "wires": [
+            [
+                "0ca8e984b9776954"
+            ]
+        ]
+    },
+    {
+        "id": "0ca8e984b9776954",
+        "type": "debug",
+        "z": "0f64b32982a2ed76",
+        "name": "save",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "838a86370df0ca9b",
+        "type": "inject",
+        "z": "0f64b32982a2ed76",
+        "name": "paylaod_ttn_2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"name\": \"as.up.data.forward\",   \"time\": \"2025-06-06T20:26:03.141492951Z\",   \"identifiers\": [     {       \"device_ids\": {         \"device_id\": \"teste-end-device-2025-v2\",         \"application_ids\": {           \"application_id\": \"teste-connect-2025-iv-v2\"         },         \"dev_eui\": \"70B3D57ED0070FB0\",         \"dev_addr\": \"260B9578\"       }     }   ],   \"data\": {     \"@type\": \"type.googleapis.com/ttn.lorawan.v3.ApplicationUp\",     \"end_device_ids\": {       \"device_id\": \"teste-end-device-2025-v2\",       \"application_ids\": {         \"application_id\": \"teste-connect-2025-iv-v2\"       },       \"dev_eui\": \"70B3D57ED0070FB0\",       \"dev_addr\": \"260B9578\"     },     \"correlation_ids\": [       \"pba:uplink:01JX3ER1SGR98BX4X37318E2CP\"     ],     \"received_at\": \"2025-06-06T20:26:03.136026169Z\",     \"uplink_message\": {       \"f_port\": 2,       \"f_cnt\": 8,       \"frm_payload\": \"/wM3\",       \"decoded_payload\": {         \"batt_percentage\": 100,         \"bytes\": [           255,           3,           55         ],         \"dist_mov_cm\": 30,         \"dist_mov_m\": 0.30,         \"pir_value\": 1,         \"tipo_alvo\": 2       },       \"rx_metadata\": [         {           \"gateway_ids\": {             \"gateway_id\": \"packetbroker\"           },           \"packet_broker\": {             \"message_id\": \"01JX3ER1SGR98BX4X37318E2CP\",             \"forwarder_net_id\": \"000013\",             \"forwarder_tenant_id\": \"lora-cml\",             \"forwarder_cluster_id\": \"eu1.cloud.thethings.industries\",             \"forwarder_gateway_eui\": \"D401C3FFFF6CF65E\",             \"forwarder_gateway_id\": \"gw-quartelchelas\",             \"home_network_net_id\": \"000013\",             \"home_network_tenant_id\": \"ttn\",             \"home_network_cluster_id\": \"eu1.cloud.thethings.network\"           },           \"time\": \"2025-06-06T20:26:02.463929Z\",           \"rssi\": -103,           \"channel_rssi\": -103,           \"snr\": 1,           \"uplink_token\": \"CnkKaeeOrNnq95kcpv8HviCXGXKhDu6W/QgDh869aJ2ZcguZMSPI6uiHPt7kwEI4wCfTq5EwSz5TQXBuyU5y30WZHPyxbklY3+QoljSmQhWHo0spg+0w/TKJSxykK9BhwpYsZqKzvAdnbfC0/xIMGf2H497XxKflAUP9Gi8KAwAAExIIbG9yYS1jbWwaHmV1MS5jbG91ZC50aGV0aGluZ3MuaW5kdXN0cmllcw==\",           \"received_at\": \"2025-06-06T20:26:02.926427271Z\"         },         {           \"gateway_ids\": {             \"gateway_id\": \"fit-1\",             \"eui\": \"00F142122877FC0D\"           },           \"timestamp\": 917575228,           \"rssi\": -77,           \"signal_rssi\": -77,           \"channel_rssi\": -77,           \"snr\": 9,           \"frequency_offset\": \"-3370\",           \"location\": {             \"latitude\": 38.75625860392359,             \"longitude\": -9.115897715091707,             \"altitude\": 100,             \"source\": \"SOURCE_REGISTRY\"           },           \"uplink_token\": \"ChMKEQoFZml0LTESCADxQhIod/wNELysxLUDGgwI2p2NwgYQ5riDyQMg4LT7ndqJ0wI=\",           \"channel_index\": 3,           \"received_at\": \"2025-06-06T20:26:02.935519573Z\"         },         {           \"gateway_ids\": {             \"gateway_id\": \"fit-1\",             \"eui\": \"00F142122877FC0D\"           },           \"antenna_index\": 1,           \"timestamp\": 917575228,           \"rssi\": -79,           \"signal_rssi\": -83,           \"channel_rssi\": -79,           \"snr\": -2,           \"frequency_offset\": \"-3370\",           \"downlink_path_constraint\": \"DOWNLINK_PATH_CONSTRAINT_NEVER\",           \"channel_index\": 19,           \"received_at\": \"2025-06-06T20:26:02.935519573Z\"         }       ],       \"settings\": {         \"data_rate\": {           \"lora\": {             \"bandwidth\": 125000,             \"spreading_factor\": 12,             \"coding_rate\": \"4/5\"           }         },         \"frequency\": \"867100000\"       },       \"received_at\": \"2025-06-06T20:26:02.930604891Z\",       \"consumed_airtime\": \"1.318912s\",       \"packet_error_rate\": 0.33333334,       \"network_ids\": {         \"net_id\": \"000013\",         \"ns_id\": \"EC656E0000000181\",         \"tenant_id\": \"ttn\",         \"cluster_id\": \"eu1\",         \"cluster_address\": \"eu1.cloud.thethings.network\"       }     }   },   \"correlation_ids\": [     \"pba:uplink:01JX3ER1SGR98BX4X37318E2CP\"   ],   \"origin\": \"ip-10-100-4-244.eu-west-1.compute.internal\",   \"context\": {     \"tenant-id\": \"CgN0dG4=\"   },   \"visibility\": {     \"rights\": [       \"RIGHT_APPLICATION_TRAFFIC_READ\"     ]   },   \"unique_id\": \"01JX3ER205FB84WBCAB0GXTCEV\" }",
+        "payloadType": "json",
+        "x": 150,
+        "y": 440,
+        "wires": [
+            [
+                "e181da34371aa31a",
+                "829f562aa4355fe7"
+            ]
+        ]
+    },
+    {
+        "id": "829f562aa4355fe7",
+        "type": "debug",
+        "z": "0f64b32982a2ed76",
+        "name": "result_ttn_2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "19b699034e9adee7",
+        "type": "http in",
+        "z": "f4deae7534c4eb7e",
+        "name": "",
+        "url": "/notify/distancia",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "47d2ec15e713e2bd",
+                "a449230d1483a838",
+                "8219ea37cf609cbb"
+            ]
+        ]
+    },
+    {
+        "id": "d2f3d410f9eecd9d",
+        "type": "http response",
+        "z": "f4deae7534c4eb7e",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 660,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "47d2ec15e713e2bd",
+        "type": "debug",
+        "z": "f4deae7534c4eb7e",
+        "name": "result_distancias",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8219ea37cf609cbb",
+        "type": "function",
+        "z": "f4deae7534c4eb7e",
+        "name": "Get Values",
+        "func": "let notification = msg.payload;\nlet entity = notification.data[0]; // primeiro item do array\nlet distancia = entity.measurement.value;\nlet pir = entity.value.value ? 1 : 0;\n\nmsg.payload = {\n    sensorId: entity.id,\n    distancia: distancia,\n    pir:pir\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "44ac0d5d5c684e59",
+                "d2f3d410f9eecd9d",
+                "540df79d568a6663",
+                "84f1d9eef8f562f4",
+                "f4eb50ee52de467b"
+            ]
+        ]
+    },
+    {
+        "id": "540df79d568a6663",
+        "type": "ui-chart",
+        "z": "f4deae7534c4eb7e",
+        "group": "4e9f56d2bf9369cd",
+        "name": "Distancia CM",
+        "label": "Distancia CM",
+        "order": 4,
+        "chartType": "line",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "distancia",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "12",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 6,
+        "className": "",
+        "interpolation": "linear",
+        "x": 690,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44ac0d5d5c684e59",
+        "type": "debug",
+        "z": "f4deae7534c4eb7e",
+        "name": "Get Values distancia",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a449230d1483a838",
+        "type": "json",
+        "z": "f4deae7534c4eb7e",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 280,
+        "wires": [
+            [
+                "3eb458cf393c3491"
+            ]
+        ]
+    },
+    {
+        "id": "3eb458cf393c3491",
+        "type": "debug",
+        "z": "f4deae7534c4eb7e",
+        "name": "result do json",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b0c117b2d512e1e9",
+        "type": "ui-table",
+        "z": "f4deae7534c4eb7e",
+        "group": "4e9f56d2bf9369cd",
+        "name": "Bateria_table",
+        "label": "",
+        "order": 2,
+        "width": 6,
+        "height": 0,
+        "maxrows": "5",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "sensorId",
+                "key": "sensorId",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "bateria",
+                "key": "bateria",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "x": 650,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ec0d9db433f16f2",
+        "type": "ui-gauge",
+        "z": "f4deae7534c4eb7e",
+        "name": "pir_value",
+        "group": "4e9f56d2bf9369cd",
+        "order": 5,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "0.5",
+                "color": "#ffc800"
+            },
+            {
+                "from": "1",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "1",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1020,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "eeb7b57946f59cc8",
+        "type": "http in",
+        "z": "f4deae7534c4eb7e",
+        "name": "",
+        "url": "/notify/bateria",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "a032e250c0eaa23c",
+                "dd4edd08cb7db11f"
+            ]
+        ]
+    },
+    {
+        "id": "dd4edd08cb7db11f",
+        "type": "function",
+        "z": "f4deae7534c4eb7e",
+        "name": "Get Values",
+        "func": "let notification = msg.payload;\nlet entity = notification.data[0]; // primeiro item do array\nlet bateria = entity.precision.value;\n\nmsg.payload = {\n    sensorId: entity.id,\n    bateria: bateria\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "2f9face9b43c3dba",
+                "2e3b89e271b1d43d",
+                "b0c117b2d512e1e9",
+                "aedb75ebb9dc6c85"
+            ]
+        ]
+    },
+    {
+        "id": "2f9face9b43c3dba",
+        "type": "http response",
+        "z": "f4deae7534c4eb7e",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a032e250c0eaa23c",
+        "type": "debug",
+        "z": "f4deae7534c4eb7e",
+        "name": "result_bateria",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2e3b89e271b1d43d",
+        "type": "debug",
+        "z": "f4deae7534c4eb7e",
+        "name": "Get Values bateria",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "84f1d9eef8f562f4",
+        "type": "ui-table",
+        "z": "f4deae7534c4eb7e",
+        "group": "4e9f56d2bf9369cd",
+        "name": "CM_table",
+        "label": "",
+        "order": 1,
+        "width": 6,
+        "height": 0,
+        "maxrows": "5",
+        "passthru": false,
+        "autocols": false,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "sensorId",
+                "key": "sensorId",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            },
+            {
+                "title": "distancia CM",
+                "key": "distancia",
+                "keyType": "key",
+                "type": "text",
+                "width": "",
+                "align": "start"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "x": 700,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aedb75ebb9dc6c85",
+        "type": "ui-chart",
+        "z": "f4deae7534c4eb7e",
+        "group": "4e9f56d2bf9369cd",
+        "name": "Bateria",
+        "label": "Bateria",
+        "order": 3,
+        "chartType": "line",
+        "category": "",
+        "categoryType": "none",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "bateria",
+        "yAxisPropertyType": "property",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": "12",
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 5,
+        "className": "",
+        "interpolation": "linear",
+        "x": 640,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4eb50ee52de467b",
+        "type": "function",
+        "z": "f4deae7534c4eb7e",
+        "name": "Get PIR Values",
+        "func": "msg.payload = msg.payload.pir;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "9ec0d9db433f16f2",
+                "db04a582277f2b4e"
+            ]
+        ]
+    },
+    {
+        "id": "db04a582277f2b4e",
+        "type": "debug",
+        "z": "f4deae7534c4eb7e",
+        "name": "pir_value",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 300,
+        "wires": []
+    }
+]

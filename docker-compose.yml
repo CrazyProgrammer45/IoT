@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  orion:
+    image: telefonicaiot/fiware-orion
+    ports:
+      - "1026:1026"
+    depends_on:
+      - mongo
+    command: -dbURI mongodb://mongo
+
+  mongo:
+    image: mongo:8.0
+
+  nodered:
+    image: nodered/node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - node_red_data:/data
+    container_name: mynodered_v2
+
+volumes:
+  node_red_data:

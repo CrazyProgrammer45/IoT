@@ -1,0 +1,57 @@
+{
+  "description": "Obtem informacacao sobre a distancia dos sensores das salas",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": ".*",
+        "type": "Room" 
+      }
+    ],
+    "condition": {
+      "attrs": [
+        "measurement",
+        "value"
+      ]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://nodered:1880/notify/distancia"
+    },
+    "attrs": [
+      "measurement",
+      "value"
+    ]
+  },
+  "expires": "2026-01-01T12:00:00.00Z",
+  "throttling": 5
+}
+
+
+
+{
+  "description": "Obtem informacacao sobre a bateria dos sensores das salas",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": ".*",
+        "type": "Room" 
+      }
+    ],
+    "condition": {
+      "attrs": [
+        "precision"
+      ]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://nodered:1880/notify/bateria"
+    },
+    "attrs": [
+      "precision"
+    ]
+  },
+  "expires": "2026-01-01T12:00:00.00Z",
+  "throttling": 5
+}

@@ -1,0 +1,288 @@
+// TTN text 1
+{
+  "name": "as.up.data.forward",
+  "time": "2025-06-06T20:26:03.141492951Z",
+  "identifiers": [
+    {
+      "device_ids": {
+        "device_id": "teste-end-device-2025",
+        "application_ids": {
+          "application_id": "teste-connect-2025-iv"
+        },
+        "dev_eui": "70B3D57ED0070FB0",
+        "dev_addr": "260B9578"
+      }
+    }
+  ],
+  "data": {
+    "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+    "end_device_ids": {
+      "device_id": "teste-end-device-2025",
+      "application_ids": {
+        "application_id": "teste-connect-2025-iv"
+      },
+      "dev_eui": "70B3D57ED0070FB0",
+      "dev_addr": "260B9578"
+    },
+    "correlation_ids": [
+      "pba:uplink:01JX3ER1SGR98BX4X37318E2CP"
+    ],
+    "received_at": "2025-06-06T20:26:03.136026169Z",
+    "uplink_message": {
+      "f_port": 2,
+      "f_cnt": 8,
+      "frm_payload": "/wM3",
+      "decoded_payload": {
+        "batt_percentage": 127,
+        "bytes": [
+          255,
+          3,
+          55
+        ],
+        "dist_mov_cm": 55,
+        "dist_mov_m": 0.55,
+        "pir_value": 1,
+        "tipo_alvo": 3
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "packetbroker"
+          },
+          "packet_broker": {
+            "message_id": "01JX3ER1SGR98BX4X37318E2CP",
+            "forwarder_net_id": "000013",
+            "forwarder_tenant_id": "lora-cml",
+            "forwarder_cluster_id": "eu1.cloud.thethings.industries",
+            "forwarder_gateway_eui": "D401C3FFFF6CF65E",
+            "forwarder_gateway_id": "gw-quartelchelas",
+            "home_network_net_id": "000013",
+            "home_network_tenant_id": "ttn",
+            "home_network_cluster_id": "eu1.cloud.thethings.network"
+          },
+          "time": "2025-06-06T20:26:02.463929Z",
+          "rssi": -103,
+          "channel_rssi": -103,
+          "snr": 1,
+          "uplink_token": "CnkKaeeOrNnq95kcpv8HviCXGXKhDu6W/QgDh869aJ2ZcguZMSPI6uiHPt7kwEI4wCfTq5EwSz5TQXBuyU5y30WZHPyxbklY3+QoljSmQhWHo0spg+0w/TKJSxykK9BhwpYsZqKzvAdnbfC0/xIMGf2H497XxKflAUP9Gi8KAwAAExIIbG9yYS1jbWwaHmV1MS5jbG91ZC50aGV0aGluZ3MuaW5kdXN0cmllcw==",
+          "received_at": "2025-06-06T20:26:02.926427271Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "fit-1",
+            "eui": "00F142122877FC0D"
+          },
+          "timestamp": 917575228,
+          "rssi": -77,
+          "signal_rssi": -77,
+          "channel_rssi": -77,
+          "snr": 9,
+          "frequency_offset": "-3370",
+          "location": {
+            "latitude": 38.75625860392359,
+            "longitude": -9.115897715091707,
+            "altitude": 100,
+            "source": "SOURCE_REGISTRY"
+          },
+          "uplink_token": "ChMKEQoFZml0LTESCADxQhIod/wNELysxLUDGgwI2p2NwgYQ5riDyQMg4LT7ndqJ0wI=",
+          "channel_index": 3,
+          "received_at": "2025-06-06T20:26:02.935519573Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "fit-1",
+            "eui": "00F142122877FC0D"
+          },
+          "antenna_index": 1,
+          "timestamp": 917575228,
+          "rssi": -79,
+          "signal_rssi": -83,
+          "channel_rssi": -79,
+          "snr": -2,
+          "frequency_offset": "-3370",
+          "downlink_path_constraint": "DOWNLINK_PATH_CONSTRAINT_NEVER",
+          "channel_index": 19,
+          "received_at": "2025-06-06T20:26:02.935519573Z"
+        }
+      ],
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": 125000,
+            "spreading_factor": 12,
+            "coding_rate": "4/5"
+          }
+        },
+        "frequency": "867100000"
+      },
+      "received_at": "2025-06-06T20:26:02.930604891Z",
+      "consumed_airtime": "1.318912s",
+      "packet_error_rate": 0.33333334,
+      "network_ids": {
+        "net_id": "000013",
+        "ns_id": "EC656E0000000181",
+        "tenant_id": "ttn",
+        "cluster_id": "eu1",
+        "cluster_address": "eu1.cloud.thethings.network"
+      }
+    }
+  },
+  "correlation_ids": [
+    "pba:uplink:01JX3ER1SGR98BX4X37318E2CP"
+  ],
+  "origin": "ip-10-100-4-244.eu-west-1.compute.internal",
+  "context": {
+    "tenant-id": "CgN0dG4="
+  },
+  "visibility": {
+    "rights": [
+      "RIGHT_APPLICATION_TRAFFIC_READ"
+    ]
+  },
+  "unique_id": "01JX3ER205FB84WBCAB0GXTCEV"
+}
+
+
+// TTN text 2
+{
+  "name": "as.up.data.forward",
+  "time": "2025-06-06T20:26:03.141492951Z",
+  "identifiers": [
+    {
+      "device_ids": {
+        "device_id": "teste-end-device-2025-v2",
+        "application_ids": {
+          "application_id": "teste-connect-2025-iv-v2"
+        },
+        "dev_eui": "70B3D57ED0070FB0",
+        "dev_addr": "260B9578"
+      }
+    }
+  ],
+  "data": {
+    "@type": "type.googleapis.com/ttn.lorawan.v3.ApplicationUp",
+    "end_device_ids": {
+      "device_id": "teste-end-device-2025-v2",
+      "application_ids": {
+        "application_id": "teste-connect-2025-iv-v2"
+      },
+      "dev_eui": "70B3D57ED0070FB0",
+      "dev_addr": "260B9578"
+    },
+    "correlation_ids": [
+      "pba:uplink:01JX3ER1SGR98BX4X37318E2CP"
+    ],
+    "received_at": "2025-06-06T20:26:03.136026169Z",
+    "uplink_message": {
+      "f_port": 2,
+      "f_cnt": 8,
+      "frm_payload": "/wM3",
+      "decoded_payload": {
+        "batt_percentage": 100,
+        "bytes": [
+          255,
+          3,
+          55
+        ],
+        "dist_mov_cm": 30,
+        "dist_mov_m": 0.30,
+        "pir_value": 1,
+        "tipo_alvo": 2
+      },
+      "rx_metadata": [
+        {
+          "gateway_ids": {
+            "gateway_id": "packetbroker"
+          },
+          "packet_broker": {
+            "message_id": "01JX3ER1SGR98BX4X37318E2CP",
+            "forwarder_net_id": "000013",
+            "forwarder_tenant_id": "lora-cml",
+            "forwarder_cluster_id": "eu1.cloud.thethings.industries",
+            "forwarder_gateway_eui": "D401C3FFFF6CF65E",
+            "forwarder_gateway_id": "gw-quartelchelas",
+            "home_network_net_id": "000013",
+            "home_network_tenant_id": "ttn",
+            "home_network_cluster_id": "eu1.cloud.thethings.network"
+          },
+          "time": "2025-06-06T20:26:02.463929Z",
+          "rssi": -103,
+          "channel_rssi": -103,
+          "snr": 1,
+          "uplink_token": "CnkKaeeOrNnq95kcpv8HviCXGXKhDu6W/QgDh869aJ2ZcguZMSPI6uiHPt7kwEI4wCfTq5EwSz5TQXBuyU5y30WZHPyxbklY3+QoljSmQhWHo0spg+0w/TKJSxykK9BhwpYsZqKzvAdnbfC0/xIMGf2H497XxKflAUP9Gi8KAwAAExIIbG9yYS1jbWwaHmV1MS5jbG91ZC50aGV0aGluZ3MuaW5kdXN0cmllcw==",
+          "received_at": "2025-06-06T20:26:02.926427271Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "fit-1",
+            "eui": "00F142122877FC0D"
+          },
+          "timestamp": 917575228,
+          "rssi": -77,
+          "signal_rssi": -77,
+          "channel_rssi": -77,
+          "snr": 9,
+          "frequency_offset": "-3370",
+          "location": {
+            "latitude": 38.75625860392359,
+            "longitude": -9.115897715091707,
+            "altitude": 100,
+            "source": "SOURCE_REGISTRY"
+          },
+          "uplink_token": "ChMKEQoFZml0LTESCADxQhIod/wNELysxLUDGgwI2p2NwgYQ5riDyQMg4LT7ndqJ0wI=",
+          "channel_index": 3,
+          "received_at": "2025-06-06T20:26:02.935519573Z"
+        },
+        {
+          "gateway_ids": {
+            "gateway_id": "fit-1",
+            "eui": "00F142122877FC0D"
+          },
+          "antenna_index": 1,
+          "timestamp": 917575228,
+          "rssi": -79,
+          "signal_rssi": -83,
+          "channel_rssi": -79,
+          "snr": -2,
+          "frequency_offset": "-3370",
+          "downlink_path_constraint": "DOWNLINK_PATH_CONSTRAINT_NEVER",
+          "channel_index": 19,
+          "received_at": "2025-06-06T20:26:02.935519573Z"
+        }
+      ],
+      "settings": {
+        "data_rate": {
+          "lora": {
+            "bandwidth": 125000,
+            "spreading_factor": 12,
+            "coding_rate": "4/5"
+          }
+        },
+        "frequency": "867100000"
+      },
+      "received_at": "2025-06-06T20:26:02.930604891Z",
+      "consumed_airtime": "1.318912s",
+      "packet_error_rate": 0.33333334,
+      "network_ids": {
+        "net_id": "000013",
+        "ns_id": "EC656E0000000181",
+        "tenant_id": "ttn",
+        "cluster_id": "eu1",
+        "cluster_address": "eu1.cloud.thethings.network"
+      }
+    }
+  },
+  "correlation_ids": [
+    "pba:uplink:01JX3ER1SGR98BX4X37318E2CP"
+  ],
+  "origin": "ip-10-100-4-244.eu-west-1.compute.internal",
+  "context": {
+    "tenant-id": "CgN0dG4="
+  },
+  "visibility": {
+    "rights": [
+      "RIGHT_APPLICATION_TRAFFIC_READ"
+    ]
+  },
+  "unique_id": "01JX3ER205FB84WBCAB0GXTCEV"
+}
