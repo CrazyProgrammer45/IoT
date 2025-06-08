@@ -3,13 +3,13 @@
 Nesta fase, foi definido como os dados são guardados, processados e apresentados. Também foi feita a modelação da estrutura dos dados e criada uma solução com dashboard (usando o Node-RED) para visualizar a informação recolhida.
 
 ## Alterações aos Requisitos Iniciais
-- [Indica aqui se houve alguma alteração face ao que estava planeado no início.]
+- 
 
 ## Diagrama da Arquitetura Final
-- [Inserir imagem ou link para o diagrama que mostra os componentes da solução: sensores, Orion, base de dados, Node-RED, etc.]
+- 
 
 ## Dados Guardados
-- Foram definidos os tipos de dados recebidos (ex: distância, deteção de movimento, temperatura).
+- Foram definidos os tipos de dados recebidos (ex: distância, deteção de movimento).
 - Também foi definido de onde vêm e com que frequência são enviados.
 - Os dados são recebidos automaticamente quando mudam (via subscrição).
 
