@@ -1,3 +1,5 @@
+CodeJsonNodeRed
+
 # Fase 4 – Modelação e Processamento de Dados
 
 Nesta fase, foi definido como os dados são guardados, processados e apresentados. Também foi feita a modelação da estrutura dos dados e criada uma solução com dashboard (usando o Node-RED) para visualizar a informação recolhida.
