@@ -2,6 +2,13 @@
 
 Nesta fase, foi definido como os dados são guardados, processados e apresentados. Também foi feita a modelação da estrutura dos dados e criada uma solução com dashboard (usando o Node-RED) para visualizar a informação recolhida.
 
+## Ficheiros necessários para o download correcto do projecto (Node-Red):
+- Node_Red_flows.json -- json que contem os flows do Node red e dos seus respetivos módulos.
+- docker-compose.yml -- yaml que contém o Node Red, Orion Fiware e Mongo DB.
+
+## Ficheiros para o download se necessário verificar o código do ttgo:
+- sistema_introsao.rar -- contem o json do payload formatters do TTN mais o código em micropython (Pycom) do TTGO
+
 ## Alterações aos Requisitos Iniciais
 - 
 
