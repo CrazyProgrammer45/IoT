@@ -5,6 +5,7 @@ Nesta fase, foi definido como os dados são guardados, processados e apresentado
 ## Ficheiros necessários para o download correcto do projecto (Node-Red):
 - Node_Red_flows.json -- json que contem os flows do Node red e dos seus respetivos módulos.
 - docker-compose.yml -- yaml que contém o Node Red, Orion Fiware e Mongo DB.
+    - NOTA: Para correr o .yml é preciso por este comando: docker compose up -d. Fizemos um docker com  persistência de dados para o MongoDB.
 
 ## Ficheiros para o download se necessário verificar o código do ttgo:
 - sistema_introsao.rar -- contem o json do payload formatters do TTN mais o código em micropython (Pycom) do TTGO
