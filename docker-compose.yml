@@ -11,6 +11,8 @@ services:
 
   mongo:
     image: mongo:8.0
+    volumes:
+      - mongodb_data:/data/db
 
   nodered:
     image: nodered/node-red
@@ -22,3 +24,4 @@ services:
 
 volumes:
   node_red_data:
+  mongodb_data:
