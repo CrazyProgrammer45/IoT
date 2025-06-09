@@ -2,6 +2,11 @@
 
 Nesta fase, foi definido como os dados são guardados, processados e apresentados. Também foi feita a modelação da estrutura dos dados e criada uma solução com dashboard (usando o Node-RED) para visualizar a informação recolhida.
 
+## NOTA IMPORTANTE:
+- Nota: Para correr a solução do Node-Red vai ser necessário instalar os seguintes nodes do Manage palette:
+    - node-red-dashboard
+    - @flowfuse/node-red-dashboard
+
 ## Ficheiros necessários para o download correcto do projecto (Node-Red):
 - Node_Red_flows.json -- json que contem os flows do Node red e dos seus respetivos módulos.
 - docker-compose.yml -- yaml que contém o Node Red, Orion Fiware e Mongo DB.
