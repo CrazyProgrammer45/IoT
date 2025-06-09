@@ -36,7 +36,7 @@ Nesta fase, foi definido como os dados são guardados, processados e apresentado
 - Mostram, por exemplo, a distância lida por sensores ou se houve movimento.
 
 ## Link da Solução
-> http://nodered:1880
+> http://nodered:1880 ou http://localhost:1880 (Se estiver ligado a um docker)
 > (Ou outro link se estiver num servidor)
 
 ## O que foi feito nesta fase
